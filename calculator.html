@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcullator</title>
+</head>
+<body id="r_body">
+    <script>
+      var f = document.createElement('form');
+         f.setAttribute('name','form1');
+      var d = document.createElement('div');
+      document.body.appendChild(d);
+         d.setAttribute('class','r_div');
+      var x = document.getElementsByClassName('r_div');
+        x[0].style.width='200px';
+        x[0].style.height='250px';
+        x[0].style.backgroundColor='red';
+        x[0].style.margin='auto'
+      var answer1 =document.createElement('input');
+            answer1.setAttribute('id','calc');
+            answer1.setAttribute('name','answer');
+            answer1.setAttribute('placeholder','Answer');
+            answer1.setAttribute('type','text');
+      var br = document.createElement('br');
+      var br1 = document.createElement('br');
+      var in1= document.createElement('input');
+            in1.setAttribute('type','button');
+            in1.setAttribute('value','1');
+            in1.setAttribute('onclick',"form1.answer.value += '1'");
+      var in2= document.createElement('input');
+            in2.setAttribute('type','button');
+            in2.setAttribute('value','2');
+            in2.setAttribute('onclick',"form1.answer.value += '2'");
+      var in3= document.createElement('input');
+            in3.setAttribute('type','button');
+            in3.setAttribute('value','3');
+            in3.setAttribute('onclick',"form1.answer.value += '3'");
+      var in4= document.createElement('input');
+            in4.setAttribute('type','button');
+            in4.setAttribute('value','+');
+            in4.setAttribute('onclick',"form1.answer.value += '+'");
+      var br2 = document.createElement('br');
+      var br3 = document.createElement('br');
+      var in5= document.createElement('input');
+            in5.setAttribute('type','button');
+            in5.setAttribute('value','4');
+            in5.setAttribute('onclick',"form1.answer.value += '4'");
+      var in6= document.createElement('input');
+            in6.setAttribute('type','button');
+            in6.setAttribute('value','5');
+            in6.setAttribute('onclick',"form1.answer.value += '5'");
+      var in7= document.createElement('input');
+            in7.setAttribute('type','button');
+            in7.setAttribute('value','6');
+            in7.setAttribute('onclick',"form1.answer.value += '6'");
+      var in8= document.createElement('input');
+            in8.setAttribute('type','button');
+            in8.setAttribute('value','-');  
+            in8.setAttribute('onclick',"form1.answer.value += '-'");
+      var br4 = document.createElement('br');
+      var br5 = document.createElement('br');
+      var in9= document.createElement('input');
+            in9.setAttribute('type','button');
+            in9.setAttribute('value','7');
+            in9.setAttribute('onclick',"form1.answer.value += '7'");
+      var in10= document.createElement('input');
+            in10.setAttribute('type','button');
+            in10.setAttribute('value','8');
+            in10.setAttribute('onclick',"form1.answer.value += '8'");
+      var in11= document.createElement('input');
+            in11.setAttribute('type','button');
+            in11.setAttribute('value','9');
+            in11.setAttribute('onclick',"form1.answer.value += '9'");
+      var in12= document.createElement('input');
+            in12.setAttribute('type','button');
+            in12.setAttribute('value','*');
+            in12.setAttribute('onclick',"form1.answer.value += '*'");
+      var br6 = document.createElement('br');
+      var br7 = document.createElement('br');
+      var in13= document.createElement('input');
+            in13.setAttribute('type','button');
+            in13.setAttribute('value','/');
+            in13.setAttribute('onclick',"form1.answer.value += '/'");
+      var in14= document.createElement('input');
+            in14.setAttribute('type','button');
+            in14.setAttribute('value','0');
+            in14.setAttribute('onclick',"form1.answer.value += '0'");
+      var in15= document.createElement('input');
+            in15.setAttribute('type','button');
+            in15.setAttribute('value','.');
+            in15.setAttribute('onclick',"form1.answer.value += '.'");
+      var in16= document.createElement('input');
+            in16.setAttribute('type','button');
+            in16.setAttribute('value','=');
+            in16.setAttribute('onclick',"form1.answer.value = eval(form1.answer.value) ");
+      var br10 = document.createElement('br');
+      var br11 = document.createElement('br');
+      var in17= document.createElement('input');
+            in17.setAttribute('type','button');
+            in17.setAttribute('value','Clear All');
+            in17.setAttribute('onclick',"form1.answer.value = ' ' ");
+            in17.setAttribute('id','clear');
+          
+      // document.body.appendChild(d);
+       d.appendChild(f);
+       f.appendChild(answer1);
+       f.appendChild(br);
+       f.appendChild(br1);
+       f.appendChild(in1);
+       f.appendChild(in2);
+       f.appendChild(in3);
+       f.appendChild(in4);
+       f.appendChild(br2);
+       f.appendChild(br3);
+       f.appendChild(in5);
+       f.appendChild(in6);
+       f.appendChild(in7);
+       f.appendChild(in8);
+       f.appendChild(br4);
+       f.appendChild(br5);
+       f.appendChild(in9);
+       f.appendChild(in10);
+       f.appendChild(in11);
+       f.appendChild(in12);
+       f.appendChild(br6);
+       f.appendChild(br7);
+       f.appendChild(in13);
+       f.appendChild(in14);
+       f.appendChild(in15);
+       f.appendChild(in16);
+       f.appendChild(br10);
+       f.appendChild(br11);
+       f.appendChild(in17);
+    </script>
+</body>
+</html>

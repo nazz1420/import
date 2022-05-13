@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<style>
+    
+    body{
+        background-color: black;
+    }
+</style>
+<body>
+        <div style="margin-left: 500px;margin-top: 200px;">
+            <button onclick="on('#FFF633');" >On Bulb</button>
+            <img src="img/3.png" id="img" height="200">
+            <button onclick="off('black');">Off Bulb</button>
+        </div>
+</body>
+<script>
+    function  on(color) {
+        document.getElementById('img').src='img/2.png';
+        document.getElementById('img').height="200";
+        change(color);
+    }
+    function  off(color) {
+        document.getElementById('img').src='img/3.png';
+        change2(color);
+    }
+    function change(color) {
+        return document.body.style.background = color;
+    }
+    function change2(color) {
+        return document.body.style.background = color;
+    }
+</script>
+</html>

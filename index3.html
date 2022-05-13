@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+    <title>Pure Java Script Form</title>
+</head>
+<body id="r_body">
+    <div id="output"></div>
+    <script>
+        document.body.style.backgroundColor="red";
+       var f = document.createElement('form');
+           f.innerHTML="LOGIN FORM"
+          var b = document.createElement('br');
+           f.appendChild(b);
+              var l =  document.createElement('div');
+                f.appendChild(l);
+               // document.querySelector('div').setAttribute('class','r_name');
+               var  l1 =document.getElementsByClassName('r_name');
+                console.log(l1);
+                //l1[0].style.color="red"
+                 l.innerHTML='NAME'
+          var i = document.createElement('input');
+                i.setAttribute('placeholder','Enter Name');
+              i1 = document.createElement('input');
+              i1.setAttribute('placeholder','Enter Father Name ');
+              i1.setAttribute('name','Name');
+              i1.setAttribute('action','#');
+           f.appendChild(i);
+           var b = document.createElement('br');
+                 f.appendChild(b);  
+           f.appendChild(i1);
+           var b = document.createElement('br');
+                 f.appendChild(b); 
+          var b = document.createElement('button');
+                b.innerHTML="Submit"
+                b.setAttribute('onsubmit','retrun false');
+                f.appendChild(b);
+           document.getElementById('r_body').appendChild(f);
+
+        document.querySelector('form').setAttribute('class','r_form');
+       
+        var l = document.getElementsByClassName('r_form');
+
+        l[0].style.width='400px';
+        l[0].style.height='600px';
+        l[0].style.backgroundColor="#e6e6e6";
+        l[0].style.margin="auto";
+        l[0].style.color="#0000cc";
+        l[0].style.fontSize="2em";
+        l[0].style.textAlign="center"
+      
+        // Output Code Here
+        $(document).ready(function() {
+            $("button").click(function() {
+                var x = $("form").serializeArray();
+                $.each(x, function(i, field) {
+                    $("#output").append(field.name + ":"
+                            + field.value + " ");
+                            console.log(field.value);
+                });
+            });
+        });
+        
+    </script>
+    
+</body>
+</html>

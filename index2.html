@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let lm=500;
+    function run(){
+        for(let i=0;i<500;i++){
+            outp(i);
+        }
+
+    }
+    setTimeout(() => {
+        run();
+    }, 500);
+    let o=0;
+    let st='';
+    run();
+    function outp(i){
+        o==0?(st=Date.now())&&console.log(st):null;
+        // console.log(Date.now()-st);
+        // o<lm?
+        o==0?setTimeout(() => {
+            console.log('pass');
+            o=0;
+        }, 1000):'';
+        o++;
+        o>lm?console.log(o):null;
+      // o==500?st==Date.now()?console.log('yes'):console.log('no'):null;
+    //    o>500?(st==Date.now()?console.log('yes'):console.log('no')):null;
+    
+       
+        // if(i<=500){
+        //     console.log(i);
+        // }
+        // else{
+
+        // }
+    }
+    function test(){
+        console.log('new',o);
+        setTimeout(function(){
+            if(o<=1000){
+            console.log(o);
+            }else{
+                console.log('j');
+            }
+           
+        },1000)
+    }
+</script>
+</html>
